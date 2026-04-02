@@ -1,5 +1,3 @@
-# Book项目
-
 ## 介绍
 
 > 项目 基于Vue3 + SpringBoot + Mysql的图书管理系统
