@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hnu.mapper.BorrowMapper">
+
+    <resultMap id="BaseResultMap" type="com.hnu.entity.Borrow">
+            <id property="id" column="id" jdbcType="INTEGER"/>
+            <result property="status" column="status" jdbcType="INTEGER"/>
+            <result property="studentid" column="studentid" jdbcType="BIGINT"/>
+            <result property="bookid" column="bookid" jdbcType="BIGINT"/>
+            <result property="createtime" column="createtime" jdbcType="TIMESTAMP"/>
+            <result property="backtime" column="backtime" jdbcType="TIMESTAMP"/>
+            <result property="endtime" column="endtime" jdbcType="TIMESTAMP"/>
+            <result property="sback" column="sback" jdbcType="INTEGER"/>
+            <result property="mback" column="mback" jdbcType="INTEGER"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,bookid,status,studentid,
+        createtime,backtime,endtime
+    </sql>
+</mapper>
